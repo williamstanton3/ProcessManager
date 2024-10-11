@@ -9,7 +9,7 @@ public class Driver {
         // and add them to the readyQueue
         manager.createProcess("p1", 20);
         // I am keeping pointers to some processes so that I can
-        // simuate sending them into different states
+        // simuate sending them into different state
         manager.createProcess("p2", 10);
         Process p3 = manager.createProcess("p3", 100);
         Process p4 = manager.createProcess("p4", 30);
