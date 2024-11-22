@@ -3,7 +3,7 @@ import java.util.Set;
 
 public class Process {
 
-    enum Status { // 3 options for a string: status is a string but will
+    enum Status {
         // throw an exception if it is not one of these three values
         READY,
         WAITING,
@@ -84,24 +84,5 @@ public class Process {
         return sb.toString();
     }
 
-
-
-    // Example of how to use enum  (delete this)
-//    public void doSomething(){
-//        Status s = Status.READY;
-//        Process p1 = new Process();
-//        Status curr = p1.state;
-//        switch(s) {
-//            case READY:
-//                // do something
-//                break;
-//            case WAITING:
-//                // do something else
-//                break;
-//            case TERMINATED:
-//                // something else
-//                break;
-//        }
-//    }
 
 }

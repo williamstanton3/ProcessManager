@@ -95,7 +95,7 @@ public class ReadyQueue {
     }
 
 
-    // example method using private inner node class, notice that I do not need to call setters and getters
+    // example method using private inner node class
     public void method() {
         Node<String> snode = new Node<>("hi");
         Node<String> nnode = new Node<>("bye");
@@ -106,15 +106,11 @@ public class ReadyQueue {
         System.out.println(snode.next.prev.value); // prints: HI
     }
 
-
-    // this is just for testing that the list is set up correctly
-    // please do not remove
     public Process thirdFromBack() {
         return trailer.prev.prev.prev.getElement();
     }
 
 
-    // no additional code needed here
     private class Node<T> {
         private T value;
         private long creationTime;
